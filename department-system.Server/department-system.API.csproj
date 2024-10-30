@@ -18,9 +18,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\department-system.client\department-system.client.esproj">
+    <ProjectReference Include="..\department-system.Business\department-system.Business.csproj" />
+    <ProjectReference Include="..\department-system.client\department-system.Client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middleware\" />
   </ItemGroup>
 
 </Project>
