@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\department-system.Business\department-system.Business.csproj" />
+    <ProjectReference Include="..\department-system.Businesss\department-system.Business.csproj" />
     <ProjectReference Include="..\department-system.client\department-system.Client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
