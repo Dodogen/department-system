@@ -1,4 +1,5 @@
-﻿using department_system.DataAccess.Entities;
+﻿using department_system.DataAccess.Configuration.Constants;
+using department_system.DataAccess.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,6 +9,16 @@ public class EducationLevelConfiguration : IEntityTypeConfiguration<EducationLev
 {
 	public void Configure(EntityTypeBuilder<EducationLevel> builder)
 	{
-		throw new NotImplementedException();
+		builder.HasKey(x => x.Id);
+
+		builder.Property(x => x.Id)
+			.ValueGeneratedOnAdd()
+			.IsRequired();
+
+		builder.Property(x => x.Name)
+			.HasMaxLength(EntityConfigurationRestricts.NAMING_MAX_LEN);
+
+		builder.HasMany(d => d.Students)
+			.WithOne();
 	}
 }
