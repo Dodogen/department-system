@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
+﻿namespace department_system.DataAccess.Entities;
 
-namespace department_system.DataAccess.Entities
+public class EducationLevel : BaseEntity
 {
-	public class EducationLevel : BaseEntity
-	{
-		public string Name { get; set; }
-		public List<Student> Students { get; set; } = new List<Student>();
-	}
+	public required string Name { get; set; }
+	public List<Student> Students { get; set; } = new List<Student>();
 }

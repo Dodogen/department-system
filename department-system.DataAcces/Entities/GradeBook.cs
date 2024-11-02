@@ -1,13 +1,10 @@
-﻿using System;
+﻿namespace department_system.DataAccess.Entities;
 
-namespace department_system.DataAccess.Entities
+public class GradeBook : BaseEntity
 {
-	public class GradeBook : BaseEntity
-	{
-		public Student Student { get; set; }
-		public Teacher Teacher { get; set; }
-		public Discipline Discipline { get; set; }
-		public short Grade {  get; set; }
-		public DateTime AssessmentDay { get; set; }
-	}
+	public required Student Student { get; set; }
+	public required Teacher Teacher { get; set; }
+	public required Discipline Discipline { get; set; }
+	public required short Grade {  get; set; }
+	public required DateTime AssessmentDay { get; set; }
 }
