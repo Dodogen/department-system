@@ -44,8 +44,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\department-system.DataAccess\department-system.DataAccess.csproj">
-      <Project>{fd061873-9fb4-410b-9e8a-06c2d2c2333b}</Project>
+    <ProjectReference Include="..\department-system.DataAcces\department-system.DataAccess.csproj">
+      <Project>{a2d5893c-13d2-4682-953d-709666d7216b}</Project>
       <Name>department-system.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
