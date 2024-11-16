@@ -1,4 +1,4 @@
-﻿namespace department_system.Business.DTO.RequestDTO.TeacherDTOs;
+﻿namespace department_system.Business.DTO.RequestDTO.StudentDTOs;
 
 public class UpdateStudentEmailDto
 {
