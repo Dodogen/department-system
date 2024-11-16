@@ -2,8 +2,8 @@
 
 namespace department_system.Business.DTO.RequestDTO.DepartmentDTOs;
 
-public class UpdateDepartmentHeadDto
+public class AddDepartmentDto
 {
-    public int DepId { get; set; }
-    public required Teacher NewDepartmentHead { get; set; }
+	public required string DepartmentName {  get; set; }
+	public required Teacher DepartmentHead { get; set; }
 }

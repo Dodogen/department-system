@@ -1,9 +1,9 @@
 ﻿using department_system.DataAccess.Entities;
 
-namespace department_system.Business.DTO.RequestDTO;
+namespace department_system.Business.DTO.RequestDTO.DepartmentDTOs;
 
-public class AddDepartmentDto
+public class UpdateDepartmentHeadDto
 {
-	public required string DepartmentName {  get; set; }
-	public required Teacher DepartmentHead { get; set; }
+    public int DepId { get; set; }
+    public required Teacher NewDepartmentHead { get; set; }
 }

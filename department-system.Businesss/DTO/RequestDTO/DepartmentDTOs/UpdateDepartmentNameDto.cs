@@ -1,4 +1,4 @@
-﻿namespace department_system.Business.DTO.RequestDTO;
+﻿namespace department_system.Business.DTO.RequestDTO.DepartmentDTOs;
 
 public class UpdateDepartmentNameDto
 {
